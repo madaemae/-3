@@ -14,7 +14,7 @@ void main()
     setlocale(LC_ALL, "");
     while (p != 2)
     {
-        cout << "1 = calculator \n 2 - exit \n";
+        cout << "1 - calculator \n 2 - exit \n 3 - standard calculator";
         cin >> p;
         switch (p) {
         case 1: {
@@ -44,10 +44,10 @@ void main()
             cout << endl << endl << "Ты спал: " << dh << " часов " << dm << " минут!";
             cout << endl << endl << "_" << endl << endl << endl;
             break;
-        };
-        case 2:
+        }
+        case 2: {
             return;
-        };
+        }
         case 3:
         {
             cout << "First number >> ";
@@ -85,11 +85,15 @@ void main()
                     cout << " Error number " << q << " >> divide by 0!" << endl;
                 };
             };
-        };
+        }
         case 4:
         {
             break;
+        }
+        default:{
+            cout << " такой команды нет";
+        }
         };
+        cout << "Result = " << c << endl;
     };
-    cout << "Result = " << c << endl;
 };
